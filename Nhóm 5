@@ -22,7 +22,7 @@ void menu(){
 void input(){
 
 }
-void function1(int n,CP a[]){
+void addstudent1(int n,CP a[]){
     CP tmp;
     int i,j;
     printf("gia tri co phieu trung binh la :\n");
@@ -48,7 +48,7 @@ void function1(int n,CP a[]){
         printf("%3s %.3f %.3f\n",a[i].name,a[i].first,a[i].last);
     }
 }
-void function2(int n,CP a[]){
+void addstudent2(int n,CP a[]){
     char x[3];int i;float max=-1e6;float min=1e6;
     printf("Nhap ma muon tim kiem: ");
     scanf("%s",&x);
@@ -69,7 +69,7 @@ void function2(int n,CP a[]){
 
     }else printf("khong co du lieu phu hop duoc tim thay.\n");
 }
-void function3(int n,CP a[]){
+void addstudent3(int n,CP a[]){
     int i,j;
     for(i=0;i<n;i++){
         for( j=i;j<n*9;j+=n){
@@ -79,7 +79,7 @@ void function3(int n,CP a[]){
         }
     }
 }
-void function4(int n,CP a[]){
+void addstudent4(int n,CP a[]){
 int dem[100];
 memset(dem,0,100);
 int i,j;
@@ -100,7 +100,7 @@ int max=0;
     }
 }
 }
-void function5(){
+void addstudent5(){
     printf("ASSIGNMENT FOR SE1750-PRF192 Code exam 01\n");
     printf("ten\n MSSV: \n");
 }
@@ -125,27 +125,27 @@ switch (choice)
 {
 case 1:
 system("cls");
-    function1(numberofCP,a);
+    addstudent1(numberofCP,a);
     printf("\n");
     break;
 case 2:
 system("cls");
-    function2(numberofCP,a);
+    addstudent2(numberofCP,a);
     printf("\n");
     break;
 case 3:
 system("cls");
-    function3(numberofCP,a);
+    addstudent3(numberofCP,a);
     printf("\n");
     break;
 case 4:
 system("cls");
-    function4(numberofCP,a);
+    addstudent4(numberofCP,a);
     printf("\n");
     break;
 case 5:
 system("cls");
-    function5();
+    addstudent5();
     printf("\n");
     break;
 default:
